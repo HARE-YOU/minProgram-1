@@ -1,0 +1,35 @@
+<!--pages/thing/home.wxml-->
+<my-cpn/>
+<view class="mar">
+  <button bindtap="handClick" type="primary" size="mini">确认</button>
+  <button bind:tap="handClick" size="mini">删除</button>
+  <button catch:tap="handClick"type="warn" size="mini">重置</button>
+</view>
+<view class="box"
+      bindtouchstart="handleStart"
+      bindtouchmove="handleMove"
+      bindtouchend="handleEnd"
+      bindtap="handleTap"
+      bindlongpress="handleLongPress">
+</view>
+<button id="btn" bindtap="handleObject" 
+        bindtouchend="handleTouchend" 
+        type="primary" 
+        class="mar">按钮
+</button>
+<!-- 
+<view class="container">
+  <block wx:for="{{titles}}" wx:key="hello">
+    <view class="item" bindtap="handleItem"
+    data-index="{{index}}"
+    data-item="{{item}}">
+      {{item}}
+    </view>
+  </block>
+</view> -->
+
+<view class="view1" capture-bind:tap="handleCaptureView1" bindtap="handleView1">view1
+  <view class="view2" capture-bind:tap="handleCaptureView2" bindtap="handleView2">view2
+    <view class="view3" capture-bind:tap="handleCaptureView3" bindtap="handleView3">view3</view>
+  </view>
+</view>

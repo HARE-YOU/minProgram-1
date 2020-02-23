@@ -1,0 +1,12 @@
+/* pages/style/wxss.wxss */
+.box{
+  color: aqua;
+  background-color: blanchedalmond;
+  font-size: 12px;
+}
+
+.switch{
+  color: blue;
+  background-color: darkcyan;
+  font-size: 32px;
+}

@@ -1,0 +1,28 @@
+
+  //js代码
+  var message = "hello"
+  var num = "007"
+  var year = 10
+  var sum = function(num1, num2) {
+    return num1 + num2
+  }
+
+
+  function priceFo(price, number) { //number,保留几位小数
+    var number = number || 2;
+    return price.toFixed(number)
+  }
+
+  function timeFo(time, format){ // format，什么形式的时间
+    return "2020-02-21"
+  }
+
+  //commonjs的模块化导出法，使变量可以在wxs之外引用
+  module.exports = {
+    message: message,
+    num: num,
+    year: year,
+    sum: sum,
+    priceFo:priceFo,
+    timeFo:timeFo,
+  }

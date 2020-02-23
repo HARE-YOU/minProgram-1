@@ -1,0 +1,21 @@
+/* components/my-table/table.wxss */
+.control {
+  display: flex;
+  height: 88rpx;
+  line-height: 88rpx;
+  background-color: rgba(180, 165, 23, 0.527);
+
+}
+
+.item {
+  flex: 1;
+  text-align: center;
+}
+
+.active {
+  color: red;
+}
+.tactive{
+  padding: 13rpx 16rpx;
+  border-bottom: 10rpx solid palevioletred;
+}

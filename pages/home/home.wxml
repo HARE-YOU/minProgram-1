@@ -1,0 +1,16 @@
+<!--pages/home/home.wxml-->
+<mtable titles="{{['服饰', '食品', '数码']}}"
+        bind:itemclick="handleClick"/>
+
+<cpn title="标题" titleclass="hell" bind:counter="handleCounter"/>
+<view>当前计数：{{icounter}}</view>
+<view>--------------------</view>
+
+<button size="mini" bindtap="handleIncre">修改组件内的数据</button>
+<mprop id="sel-id"/>
+
+<view>--------------------</view>
+<mslot>
+<button size="mini" slot="slot2">按钮</button>
+<slider value="60" slot="slot1"></slider>
+</mslot>

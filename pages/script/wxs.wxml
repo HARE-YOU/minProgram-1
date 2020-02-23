@@ -1,0 +1,26 @@
+
+
+
+<!-- <wxs module="info">
+  //js代码
+  var message = "hello"
+  var num = "007"
+  var year = 10
+  var sum = function(num1, num2) {
+    return num1 + num2
+  }
+  //commonjs的模块化导出法，使变量可以在wxs之外引用
+  module.exports = {
+    message: message,
+    num: num,
+    year: year,
+    sum: sum,
+  }
+</wxs> -->
+<wxs src="../wxs/wxs1.wxs" module="hell"></wxs>
+<view>{{hell.message}}</view>
+<view>{{hell.sum(10,20)}}</view>
+
+
+<view>{{hell.priceFo(20.666666,3)}}</view>
+<view>{{hell.timeFo(time, 'yyyy-mm-dd')}}</view>

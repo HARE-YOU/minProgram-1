@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "cpn": "/components/my-cpn/cpn",
+    "mtable": "/components/my-table/table",
+    "mprop": "/components/my-prop/prop",
+    "mslot": "/components/my-slot/mslot"
+  }
+}

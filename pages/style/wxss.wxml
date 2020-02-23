@@ -1,0 +1,74 @@
+
+<view style='color:red; font-size:32px'>hello</view>
+
+<view class="box">hehehe</view>   
+
+<view class="contener">hehehh</view> 
+
+
+
+ <view>{{message}}</view>
+
+ <view>{{lname}} {{fname}}</view>
+
+<view>{{lname + ' ' + fname}}</view>
+
+<view>{{age >= 18 ? '成年人' : '未成年'}}</view>
+
+<view>{{time}}</view>
+
+<button size="mini" class="box" bindtap="handSwitch">换色</button>
+
+<view class='box {{isActive ? "switch" : ""}}'>修改class</view>
+
+
+<view>--------------</view>
+<button size="mini" bindtap="handShow">隐藏</button>
+
+<view wx:if='{{isShow}}'>如果if的内容为真则显示这个标签</view>   
+<view wx:if="{{score >= 90}}">优</view>
+<view wx:elif="{{score >= 60}}">及格</view>
+<view wx:else>差</view>
+<view hidden="true">niaho</view> 
+
+
+
+<view>----------------</view>
+<view wx:for="{{['a','b','c']}}" wx:key="info">{{item}} {{index}}</view>
+<view wx:for="hello" wx:key="info">{{item}}</view>
+<view wx:for="{{9}}" wx:key="info">{{item}}</view>  遍历9次，从0开始 -->
+<!--对一整组组件标签进行整体操作用block包裹 -->
+<!-- <block/>并不是一个组件，只是一个包装元素不做任何渲染，只接受控制属性-->
+
+<block wx:for="{{3}}" wx:key="info">
+  <view>展示</view>
+  <button>按钮</button>
+</block> 
+
+
+<view>---------</view>
+
+<view wx:for="{{movies}}" wx:for-item="movie" wx:for-index="id" wx:key="info">
+      {{movie}} {{id}}
+</view>
+
+<block wx:for="{{nums}}" wx:for-index="i" wx:key="info">
+  <view wx:for="{{nums[i]}}" wx:for-index="j" wx:key="hell">{{item}}</view>
+</block>
+
+<view wx:for="{{['a','b','c']}}" wx:key="unique">{{item}}</view>
+
+<template name="content">
+  <button class="box" size="mini">hello</button>
+  <view>world</view>
+</template>
+<template is="content"/>
+
+
+<template name="con">
+  <button class="switch" size="mini">{{btnText}}</button>
+  <view>{{vieText}}</view>
+</template>
+<template is="con" data="{{btnText: '按钮', vieText:'hhh'}}"></template>
+
+<template is="con" data="{{btnText: '提交', vieText:'kkk'}}"></template>

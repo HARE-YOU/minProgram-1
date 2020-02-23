@@ -1,0 +1,46 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/book/shelf",
+    "pages/style/wxss",
+    "pages/script/wxs",
+    "pages/thing/home",
+    "pages/net/net"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff000",
+    "navigationBarTitleText": "微信读书",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#464b52",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "selectedColor": "#fff000",
+    "backgroundColor": "#666666",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "书城",
+        "iconPath": "assets/images/tabbar/home.png",
+        "selectedIconPath": "assets/images/tabbar/home_active.png"
+      },
+      {
+        "pagePath": "pages/book/shelf",
+        "text": "书架",
+        "iconPath": "assets/images/tabbar/category.png",
+        "selectedIconPath": "assets/images/tabbar/category_active.png"
+      },
+      {
+        "pagePath": "pages/style/wxss",
+        "text": "排行榜",
+        "iconPath": "assets/images/home/paihangbang.png",
+        "selectedIconPath": "assets/images/home/paihangbang.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

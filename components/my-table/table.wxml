@@ -1,0 +1,12 @@
+<!--components/my-table/table.wxml-->
+<view class="control">
+  <block wx:for="{{titles}}" wx:key="title">
+    <view class="item">
+      <text class="{{curIndex == index ? 'active tactive' : ''}}" 
+            bindtap="handleClick"
+            data-index="{{index}}">{{item}}
+      </text>
+    </view>
+  </block>
+</view>
+

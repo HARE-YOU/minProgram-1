@@ -1,0 +1,41 @@
+/* pages/thing/home.wxss */
+.mar{
+  text-align: center;
+  margin-top: 30rpx;
+}
+.box{
+  width: 320rpx;
+  height: 320rpx;
+  background-color: aqua;
+  margin: auto;
+  margin-top: 30rpx;
+}
+/* .container{
+  display: inline;
+  height: 30rpx;
+}
+.item{
+  flex: 1;
+  text-align: center;
+} */
+.view1{
+  background: khaki;
+  height: 300rpx;
+  width: 300rpx;
+  margin:auto;
+  margin-top: 30rpx;
+}
+.view2{
+  background: lightcoral;
+  height: 200rpx;
+  width: 200rpx;
+  margin:auto;
+  margin-top: 30rpx;
+}
+.view3{
+  background: lightskyblue;
+  height: 100rpx;
+  width: 100rpx;
+  margin:auto;
+  margin-top: 30rpx;
+}

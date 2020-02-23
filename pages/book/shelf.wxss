@@ -1,0 +1,41 @@
+/* pages/book/shelf.wxss */
+.box {
+  background-color: yellow;
+  color: aquamarine;
+  width: 100px;
+  height: 100px;
+}
+
+.input {
+  border: 1px solid #805c0f;
+  margin: 20px 30px;
+  
+}
+
+.contionX {
+ background-color: chocolate;
+ white-space: nowrap;
+}
+
+.itemX {
+ background-color: darkseagreen;
+ width: 100px;
+ height: 100px;
+ margin: 5px;
+ display: inline-block;
+}
+
+.contionY {
+  background-color: rgb(209, 52, 183);
+  height: 200px;
+  margin-top: 20px;
+  /* white-space: nowrap; */
+ }
+ 
+ .itemY {
+  background-color: darkseagreen;
+  width: 100px;
+  height: 100px;
+  margin: 5px;
+  /* display: inline-block; */
+ }

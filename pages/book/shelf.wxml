@@ -1,0 +1,46 @@
+<!--pages/book/shelf.wxml-->
+<text>书架\n</text>
+<!-- -------------------button--------------------   -->
+<!-- <button size="mini" type="primary">
+    你敢按一下吗
+  </button>
+  <view class="box">
+    view
+  </view>
+ -->
+ <!-- ------------------image-----------------------   -->
+<!-- 
+<image src="../../assets/images/home/WechatIMG56157.jpeg"
+    mode="aspectFit"/>
+<image src="{{imagePath}}"
+    lazy-load="true"
+    mode="aspectFill"
+    show-menu-by-longpress="true"></image>
+<button bindtap="handleChooseAlbum" type="primary">从相册中选中图片</button> -->
+
+<!-- -------------------input---------------------->
+<input class="input"
+       value="你好"
+       type="text"
+       confirm-type="go"/>
+<input class="input"
+       placeholder="绑定事件"
+       bindinput="handInput"
+       bindfocus="handFocus"
+       bindblur="handBlur"
+       bindconfirm="handConfirm"/>
+
+<!-- -----------------  scroll-view  --------     -->
+<!-- 水平滚动-->
+<scroll-view class="contionX" scroll-x>
+<view>水平滚动</view>
+  <view wx:for="{{10}}" class="itemX" wx:key="hell">{{item}}</view>
+</scroll-view>
+
+<!-- 垂直滚动-->
+<scroll-view class="contionY" scroll-y>
+  <view>垂直滚动</view>
+  <view wx:for="{{10}}" class="itemY" wx:key="info">{{item}}</view>
+</scroll-view>
+
+
